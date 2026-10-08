@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Second Mile ESE Compliance Visit</title>
+  <meta name="theme-color" content="#5A4A9C">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ESE Visit">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <div class="shell">
+    <header class="topbar">
+      <button class="menu-btn" type="button" data-act="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span><strong>Second Mile</strong><span class="brand-sub">ESE Compliance Visit</span></span>
+      </a>
+      <span class="save-status" id="saveStatus" aria-live="polite"></span>
+    </header>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#/" data-nav="">Dashboard</a>
+      <a href="#/visit/new" data-nav="visit/new">New compliance visit</a>
+      <a href="#/files" data-nav="files">Individual student file review</a>
+      <a href="#/schoolwide" data-nav="schoolwide">Schoolwide compliance review <span class="soon">Stage 2</span></a>
+      <a href="#/schools" data-nav="schools">School directory</a>
+      <a href="#/reports" data-nav="reports">Compliance reports <span class="soon">Stage 3</span></a>
+      <a href="#/actions" data-nav="actions">Corrective action tracker <span class="soon">Stage 2</span></a>
+      <a href="#/visits" data-nav="visits">Previous visits</a>
+      <a href="#/settings" data-nav="settings">Settings and checklists</a>
+    </nav>
+    <div class="main">
+      <div id="banner"></div>
+      <main id="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript>This app needs JavaScript turned on.</noscript>
+  <script src="rules.js"></script>
+  <script src="roster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
